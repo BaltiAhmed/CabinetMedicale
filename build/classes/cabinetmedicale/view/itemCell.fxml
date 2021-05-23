@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootAnchorPane" prefHeight="90.0" prefWidth="280.0" style="-fx-background-color: #2196f3;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="iconImageView" fitHeight="44.0" fitWidth="60.0" layoutX="1.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-fever-64.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="fullname" layoutX="58.0" layoutY="2.0" prefHeight="24.0" prefWidth="239.0" text="full name" textFill="#f8f3f3">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="dateLabel" alignment="CENTER" layoutY="78.0" prefHeight="17.0" prefWidth="700.0" style="-fx-background-color: #fff;" text="Date" textFill="#19ab40" />
+      <ImageView fx:id="delete" fitHeight="24.0" fitWidth="33.0" layoutX="620.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icon_delete.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="update" fitHeight="24.0" fitWidth="24.0" layoutX="662.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icon_update.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="email" layoutX="332.0" layoutY="2.0" prefHeight="25.0" prefWidth="180.0" text="email" textFill="#f8f3f3">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="tel" layoutX="332.0" layoutY="35.0" prefHeight="25.0" prefWidth="180.0" text="tel" textFill="#f8f3f3">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="adresse" layoutX="58.0" layoutY="34.0" prefHeight="24.0" prefWidth="239.0" text="adresse" textFill="#f8f3f3">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

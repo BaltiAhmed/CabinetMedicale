@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="750.0" style="-fx-background-color: #fafafa;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cabinetmedicale.controllers.ListPatientController">
+   <children>
+      <AnchorPane prefHeight="18.0" prefWidth="750.0" style="-fx-background-color: #338a3e;" />
+      <AnchorPane layoutY="17.0" prefHeight="58.0" prefWidth="750.0" style="-fx-background-color: #66bb6a;">
+         <children>
+            <Label layoutX="321.0" layoutY="10.0" text="MediPlan">
+               <font>
+                  <Font name="Arial Bold" size="26.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="add" fitHeight="41.0" fitWidth="52.0" layoutX="695.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/outline_control_point_black_48dp.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <JFXListView fx:id="list" layoutY="75.0" prefHeight="377.0" prefWidth="750.0" />
+   </children>
+</AnchorPane>
