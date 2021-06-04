@@ -11,32 +11,37 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="750.0" style="-fx-background-color: #fafafa;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cabinetmedicale.controllers.LoginController">
    <children>
-      <AnchorPane prefHeight="18.0" prefWidth="750.0" style="-fx-background-color: #338a3e;" />
-      <AnchorPane layoutY="17.0" prefHeight="58.0" prefWidth="750.0" style="-fx-background-color: #66bb6a;">
+      <AnchorPane prefHeight="18.0" prefWidth="750.0" style="-fx-background-color: #82b3c9;" />
+      <AnchorPane layoutY="17.0" prefHeight="58.0" prefWidth="750.0" style="-fx-background-color: #b3e5fc;">
          <children>
             <Label layoutX="321.0" layoutY="10.0" text="MediPlan">
                <font>
                   <Font name="Arial Bold" size="26.0" />
                </font>
             </Label>
-            <JFXButton fx:id="LoginSignupButton" layoutX="663.0" layoutY="11.0" prefHeight="25.0" prefWidth="73.0" style="-fx-background-color: #8e24aa;" text="Signup" textFill="#fffdfd">
+            <JFXButton fx:id="LoginSignupButton" layoutX="663.0" layoutY="11.0" prefHeight="25.0" prefWidth="73.0" style="-fx-background-color: #82b3c9;" text="Signup" textFill="#fffdfd">
                <font>
                   <Font size="14.0" />
                </font>
             </JFXButton>
          </children>
       </AnchorPane>
-      <JFXPasswordField fx:id="password" focusColor="#b218c6" layoutX="200.0" layoutY="267.0" prefHeight="25.0" prefWidth="350.0" promptText="Password" unFocusColor="#792276" />
-      <JFXButton fx:id="submit" layoutX="284.0" layoutY="337.0" prefHeight="31.0" prefWidth="182.0" style="-fx-background-color: #c2185b;" text="Submit" />
-      <ImageView fitHeight="31.0" fitWidth="33.0" layoutX="519.0" layoutY="262.0" pickOnBounds="true" preserveRatio="true">
+      <JFXPasswordField fx:id="password" focusColor="#2561a1" layoutX="375.0" layoutY="265.0" prefHeight="25.0" prefWidth="350.0" promptText="Password" unFocusColor="#0b8dd3" />
+      <JFXButton fx:id="submit" layoutX="459.0" layoutY="326.0" prefHeight="31.0" prefWidth="182.0" style="-fx-background-color: #82b3c9;" text="Submit" />
+      <ImageView fitHeight="31.0" fitWidth="33.0" layoutX="695.0" layoutY="262.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assets/outline_lock_black_48dp.png" />
          </image>
       </ImageView>
-      <JFXTextField fx:id="email" focusColor="#cd13a4" layoutX="200.0" layoutY="183.0" prefHeight="25.0" prefWidth="350.0" promptText="Email" unFocusColor="#863686" />
-      <ImageView fitHeight="31.0" fitWidth="33.0" layoutX="519.0" layoutY="178.0" pickOnBounds="true" preserveRatio="true">
+      <JFXTextField fx:id="email" focusColor="#2561a1" layoutX="375.0" layoutY="181.0" prefHeight="25.0" prefWidth="350.0" promptText="Email" unFocusColor="#0b8dd3" />
+      <ImageView fitHeight="31.0" fitWidth="33.0" layoutX="695.0" layoutY="178.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assets/outline_alternate_email_black_48dp.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="241.0" fitWidth="246.0" layoutX="32.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-heart-health-96.png" />
          </image>
       </ImageView>
    </children>

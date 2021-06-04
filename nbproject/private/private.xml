@@ -4,26 +4,16 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/darra/OneDrive/Documents/emnatest/CabinetMedicale/src/cabinetmedicale/controllers/ListPatientController.java</file>
-            <file>file:/C:/Users/darra/OneDrive/Documents/emnatest/CabinetMedicale/src/cabinetmedicale/utils/DataSource.java</file>
-            <file>file:/C:/Users/darra/OneDrive/Documents/emnatest/CabinetMedicale/src/cabinetmedicale/view/itemCell.fxml</file>
-            <file>file:/C:/Users/darra/OneDrive/Documents/emnatest/CabinetMedicale/src/cabinetmedicale/controllers/AddPatientController.java</file>
-            <file>file:/C:/Users/darra/OneDrive/Documents/emnatest/CabinetMedicale/src/cabinetmedicale/Iservice/IService.java</file>
-            <file>file:/C:/Users/darra/OneDrive/Documents/emnatest/CabinetMedicale/src/cabinetmedicale/controllers/SignupController.java</file>
-            <file>file:/C:/Users/darra/OneDrive/Documents/emnatest/CabinetMedicale/src/cabinetmedicale/entities/Patient.java</file>
-            <file>file:/C:/Users/darra/OneDrive/Documents/emnatest/CabinetMedicale/src/cabinetmedicale/controllers/ItemCellController.java</file>
-            <file>file:/C:/Users/darra/OneDrive/Documents/emnatest/CabinetMedicale/src/cabinetmedicale/view/signup.fxml</file>
-            <file>file:/C:/Users/darra/OneDrive/Documents/emnatest/CabinetMedicale/src/cabinetmedicale/controllers/UpdatePatientController.java</file>
-            <file>file:/C:/Users/darra/OneDrive/Documents/emnatest/CabinetMedicale/src/cabinetmedicale/view/updatePatient.fxml</file>
             <file>file:/C:/Users/darra/OneDrive/Documents/emnatest/CabinetMedicale/src/cabinetmedicale/CabinetMedicale.java</file>
-            <file>file:/C:/Users/darra/OneDrive/Documents/emnatest/CabinetMedicale/src/cabinetmedicale/view/login.fxml</file>
             <file>file:/C:/Users/darra/OneDrive/Documents/emnatest/CabinetMedicale/src/cabinetmedicale/controllers/LoginController.java</file>
-            <file>file:/C:/Users/darra/OneDrive/Documents/emnatest/CabinetMedicale/src/cabinetmedicale/view/message.fxml</file>
-            <file>file:/C:/Users/darra/OneDrive/Documents/emnatest/CabinetMedicale/src/cabinetmedicale/entities/Cabinet.java</file>
-            <file>file:/C:/Users/darra/OneDrive/Documents/emnatest/CabinetMedicale/src/cabinetmedicale/view/listPatient.fxml</file>
-            <file>file:/C:/Users/darra/OneDrive/Documents/emnatest/CabinetMedicale/src/cabinetmedicale/view/addPatient.fxml</file>
-            <file>file:/C:/Users/darra/OneDrive/Documents/emnatest/CabinetMedicale/src/cabinetmedicale/controllers/MessageController.java</file>
+            <file>file:/C:/Users/darra/OneDrive/Documents/emnatest/CabinetMedicale/src/cabinetmedicale/controllers/AddRDVController.java</file>
+            <file>file:/C:/Users/darra/OneDrive/Documents/emnatest/CabinetMedicale/src/cabinetmedicale/controllers/AddPatientController.java</file>
+            <file>file:/C:/Users/darra/OneDrive/Documents/emnatest/CabinetMedicale/src/cabinetmedicale/services/RDVService.java</file>
+            <file>file:/C:/Users/darra/OneDrive/Documents/emnatest/CabinetMedicale/src/cabinetmedicale/view/listRDV.fxml</file>
+            <file>file:/C:/Users/darra/OneDrive/Documents/emnatest/CabinetMedicale/src/cabinetmedicale/controllers/SignupController.java</file>
             <file>file:/C:/Users/darra/OneDrive/Documents/emnatest/CabinetMedicale/src/cabinetmedicale/services/CabinetService.java</file>
             <file>file:/C:/Users/darra/OneDrive/Documents/emnatest/CabinetMedicale/src/cabinetmedicale/services/PatientService.java</file>
+            <file>file:/C:/Users/darra/OneDrive/Documents/emnatest/CabinetMedicale/src/cabinetmedicale/controllers/ListRDVController.java</file>
         </group>
     </open-files>
 </project-private>

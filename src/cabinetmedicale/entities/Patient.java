@@ -18,6 +18,8 @@ public class Patient {
     private String tel;
     private String date;
     
+    
+    
 
     public Patient() {
     }

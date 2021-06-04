@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="750.0" style="-fx-background-color: #fafafa;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cabinetmedicale.controllers.ListRDVController">
+   <children>
+      <AnchorPane prefHeight="18.0" prefWidth="750.0" style="-fx-background-color: #82b3c9;" />
+      <AnchorPane layoutY="17.0" prefHeight="58.0" prefWidth="750.0" style="-fx-background-color: #b3e5fc;">
+         <children>
+            <Label layoutX="321.0" layoutY="10.0" text="MediPlan">
+               <font>
+                  <Font name="Arial Bold" size="26.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="add" fitHeight="41.0" fitWidth="52.0" layoutX="695.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/outline_control_point_black_48dp.png" />
+               </image>
+            </ImageView>
+            <DatePicker fx:id="date" layoutX="38.0" layoutY="17.0" prefHeight="25.0" prefWidth="164.0" promptText="Date de  RDV" />
+         </children>
+      </AnchorPane>
+      <JFXListView fx:id="list" layoutY="75.0" prefHeight="377.0" prefWidth="750.0" />
+   </children>
+</AnchorPane>

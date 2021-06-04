@@ -9,10 +9,10 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="750.0" style="-fx-background-color: #fafafa;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cabinetmedicale.view.UpdatePatientController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="750.0" style="-fx-background-color: #fafafa;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cabinetmedicale.controllers.UpdatePatientController">
    <children>
-      <AnchorPane prefHeight="18.0" prefWidth="750.0" style="-fx-background-color: #338a3e;" />
-      <AnchorPane layoutY="17.0" prefHeight="58.0" prefWidth="750.0" style="-fx-background-color: #66bb6a;">
+      <AnchorPane prefHeight="18.0" prefWidth="750.0" style="-fx-background-color: #82b3c9;" />
+      <AnchorPane layoutY="17.0" prefHeight="58.0" prefWidth="750.0" style="-fx-background-color: #b3e5fc;">
          <children>
             <Label layoutX="321.0" layoutY="10.0" text="MediPlan">
                <font>
@@ -26,11 +26,11 @@
             </ImageView>
          </children>
       </AnchorPane>
-      <JFXTextField fx:id="name" focusColor="#c41fda" layoutX="229.0" layoutY="120.0" prefHeight="25.0" prefWidth="289.0" promptText="Full name" unFocusColor="#8a2788" />
-      <JFXTextField fx:id="email" focusColor="#dd0ed0" layoutX="230.0" layoutY="175.0" prefHeight="25.0" prefWidth="289.0" promptText="Email" unFocusColor="#833086" />
-      <JFXTextField fx:id="adresse" focusColor="#d31dcd" layoutX="231.0" layoutY="234.0" prefHeight="25.0" prefWidth="289.0" promptText="Adress" unFocusColor="#842a94" />
+      <JFXTextField fx:id="name" focusColor="#2561a1" layoutX="229.0" layoutY="120.0" prefHeight="25.0" prefWidth="289.0" promptText="Full name" unFocusColor="#0b8dd3" />
+      <JFXTextField fx:id="email" focusColor="#2561a1" layoutX="230.0" layoutY="175.0" prefHeight="25.0" prefWidth="289.0" promptText="Email" unFocusColor="#0b8dd3" />
+      <JFXTextField fx:id="adresse" focusColor="#2561a1" layoutX="231.0" layoutY="234.0" prefHeight="25.0" prefWidth="289.0" promptText="Adress" unFocusColor="#0b8dd3" />
       <DatePicker fx:id="date" layoutX="229.0" layoutY="352.0" prefHeight="25.0" prefWidth="289.0" promptText="Date of birth" />
-      <JFXTextField fx:id="tel" focusColor="#d31dcd" layoutX="229.0" layoutY="290.0" prefHeight="25.0" prefWidth="289.0" promptText="Phone number" unFocusColor="#842a94" />
-      <JFXButton fx:id="submit" layoutX="285.0" layoutY="395.0" prefHeight="31.0" prefWidth="182.0" style="-fx-background-color: #c2185b;" text="Submit" />
+      <JFXTextField fx:id="tel" focusColor="#2561a1" layoutX="229.0" layoutY="290.0" prefHeight="25.0" prefWidth="289.0" promptText="Phone number" unFocusColor="#0b8dd3" />
+      <JFXButton fx:id="submit" layoutX="285.0" layoutY="395.0" prefHeight="31.0" prefWidth="182.0" style="-fx-background-color: #82b3c9;" text="Submit" />
    </children>
 </AnchorPane>

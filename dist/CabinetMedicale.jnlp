@@ -11,9 +11,12 @@
   </resources>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="CabinetMedicale.jar" size="60728" download="eager" />
+    <jar href="CabinetMedicale.jar" size="86315" download="eager" />
+    <jar href="lib/activation.jar" size="55147" download="eager" />
     <jar href="lib/jfoenix-8.0.10.jar" size="2710207" download="eager" />
+    <jar href="lib/mail.jar" size="462098" download="eager" />
     <jar href="lib/mysql-connector-java-5.1.23-bin.jar" size="827921" download="eager" />
+    <jar href="lib/techsoftemail.jar" size="3878" download="eager" />
   </resources>
   <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="CabinetMedicale" >
     <param name="requiredFXVersion" value="2.2+"/>

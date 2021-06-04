@@ -14,6 +14,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 /**
  * FXML Controller class
@@ -34,6 +35,7 @@ public class MessageController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
 
+        
         close.setOnAction(event -> {
             closeButtonAction();
         });
@@ -46,6 +48,7 @@ public class MessageController implements Initializable {
     private void closeButtonAction() {
         // get a handle to the stage
         Stage stage = (Stage) close.getScene().getWindow();
+        
         // do what you have to do
         stage.close();
     }

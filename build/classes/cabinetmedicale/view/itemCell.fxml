@@ -19,12 +19,12 @@
          </font>
       </Label>
       <Label fx:id="dateLabel" alignment="CENTER" layoutY="78.0" prefHeight="17.0" prefWidth="700.0" style="-fx-background-color: #fff;" text="Date" textFill="#19ab40" />
-      <ImageView fx:id="delete" fitHeight="24.0" fitWidth="33.0" layoutX="620.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="delete" fitHeight="24.0" fitWidth="33.0" layoutX="674.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assets/icon_delete.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="update" fitHeight="24.0" fitWidth="24.0" layoutX="662.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="update" fitHeight="24.0" fitWidth="24.0" layoutX="648.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assets/icon_update.png" />
          </image>
@@ -44,5 +44,10 @@
             <Font size="16.0" />
          </font>
       </Label>
+      <ImageView fx:id="rdv" fitHeight="24.0" fitWidth="24.0" layoutX="618.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/outline_today_black_48dp.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

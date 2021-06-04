@@ -12,16 +12,15 @@ import java.sql.SQLException;
 /**
  *
  * @author sanabenfadhel
- */public class DataSource {
+ */
+public class DataSource {
 
     private static DataSource data;
     private Connection con;
 
-
     //   static String url="jdbc:mysql://localhost:3306/testelife";
 //   static String login="root";
 //   static String pwd="";
-
     static String url = "jdbc:mysql://localhost:3306/cabinetmedicale";
 
     static String login = "root";

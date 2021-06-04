@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cabinetmedicale.controllers.AddRDVController">
+   <children>
+      <AnchorPane layoutX="3.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="750.0" style="-fx-background-color: #fafafa;">
+         <children>
+            <AnchorPane layoutX="-9.0" prefHeight="18.0" prefWidth="759.0" style="-fx-background-color: #82b3c9;" />
+            <AnchorPane layoutX="-9.0" layoutY="17.0" prefHeight="58.0" prefWidth="759.0" style="-fx-background-color: #b3e5fc;">
+               <children>
+                  <Label layoutX="321.0" layoutY="10.0" text="MediPlan">
+                     <font>
+                        <Font name="Arial Bold" size="26.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="back" fitHeight="42.0" fitWidth="63.0" layoutX="14.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/outline_arrow_back_black_48dp.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <DatePicker fx:id="date" layoutX="231.0" layoutY="146.0" prefHeight="25.0" prefWidth="289.0" promptText="Date de  RDV" />
+            <JFXButton fx:id="submit" layoutX="280.0" layoutY="341.0" prefHeight="31.0" prefWidth="182.0" style="-fx-background-color: #82b3c9;" text="Valider" />
+            <JFXTextArea fx:id="note" layoutX="231.0" layoutY="203.0" prefHeight="96.0" prefWidth="289.0" promptText="Note" unFocusColor="#0b8dd3" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

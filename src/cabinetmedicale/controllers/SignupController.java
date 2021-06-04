@@ -22,6 +22,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 /**
  * FXML Controller class
@@ -71,7 +72,7 @@ public class SignupController implements Initializable {
 
         submit.setOnAction(event -> {
 
-            if (!nom.getText().equals("") || !specialite.getText().equals("") || !password.getText().equals("") || !password.getText().equals(cpassword.getText()) || !email.getText().equals("")) {
+            if (!nom.getText().equals("") && !specialite.getText().equals("") && !password.getText().equals("") && !password.getText().equals(cpassword.getText()) && !email.getText().equals("")) {
 
                 try {
                     signup(nom.getText(), specialite.getText(), password.getText(), email.getText());
@@ -117,6 +118,7 @@ public class SignupController implements Initializable {
         stage.setScene(new Scene(root));
 
         MessageController message = loader.getController();
+        stage.initStyle(StageStyle.UNDECORATED);
 
         message.setText(text);
 

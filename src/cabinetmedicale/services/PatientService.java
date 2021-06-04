@@ -53,8 +53,11 @@ public class PatientService implements IService<Patient> {
     @Override
     public void delete(Patient t) throws SQLException {
         System.out.println(t);
-        String reqins = "DELETE FROM `patient` WHERE `patient`.`id` = '"+t.getId()+"'";
+        String reqins = "DELETE FROM `patient` WHERE `patient`.`id` = '" + t.getId() + "'";
         ste.executeUpdate(reqins);
+
+        String RDVreqins = "DELETE FROM `rdv` WHERE `rdv`.`idpatient` = '" + t.getId() + "'";
+        ste.executeUpdate(RDVreqins);
     }
 
     @Override
@@ -68,20 +71,19 @@ public class PatientService implements IService<Patient> {
     }
     private ObservableList<Patient> patients;
 
-    public  ObservableList<Patient> findByCabinetId(int Cid) throws SQLException {
+    public ObservableList<Patient> findByCabinetId(int Cid) throws SQLException {
 
         patients = FXCollections.observableArrayList();
         List<Patient> list = new ArrayList<>();
-        String req = "select * from patient where cid='" + Cid + "'";
+        String req = "select * from patient where cid='" + Cid + "' ORDER BY id DESC";
         ResultSet rs = ste.executeQuery(req);
 
         while (rs.next()) {
-
             int id = rs.getInt("id");
             int cid = rs.getInt("cid");
             String fullname = rs.getString("fullname");
             String email = rs.getString("email");
-            String adresse = rs.getString("email");
+            String adresse = rs.getString("adresse");
             String tel = rs.getString("adresse");
             String date = rs.getString("date");
 
@@ -92,7 +94,30 @@ public class PatientService implements IService<Patient> {
         return patients;
     }
 
-    public  List<Patient> find(String Pemail) throws SQLException {
+    public ObservableList<Patient> searchByName(int Cid, String name) throws SQLException {
+
+        patients = FXCollections.observableArrayList();
+        List<Patient> list = new ArrayList<>();
+        String req = "select * from patient where cid='" + Cid + "' AND patient.fullname LIKE  '" + name + "%' ORDER BY id DESC";
+        ResultSet rs = ste.executeQuery(req);
+
+        while (rs.next()) {
+            int id = rs.getInt("id");
+            int cid = rs.getInt("cid");
+            String fullname = rs.getString("fullname");
+            String email = rs.getString("email");
+            String adresse = rs.getString("adresse");
+            String tel = rs.getString("adresse");
+            String date = rs.getString("date");
+
+            Patient p = new Patient(id, cid, fullname, email, adresse, tel, date);
+            patients.addAll(p);
+
+        }
+        return patients;
+    }
+
+    public List<Patient> find(String Pemail) throws SQLException {
         List<Patient> list = new ArrayList<>();
         String req = "select * from patient where email='" + Pemail + "'";
         ResultSet rs = ste.executeQuery(req);

@@ -68,6 +68,9 @@ public class ItemCellController extends JFXListCell<Patient> {
     private FXMLLoader fxmlLoader;
 
     @FXML
+    private ImageView rdv;
+
+    @FXML
     void initialize() {
 
     }
@@ -130,6 +133,31 @@ public class ItemCellController extends JFXListCell<Patient> {
 
             });
 
+            rdv.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> {
+                rdv.getScene().getWindow().hide();
+                FXMLLoader loader = new FXMLLoader();
+                loader.setLocation(getClass().getResource("/cabinetmedicale/view/addRDV.fxml"));
+
+                try {
+                    loader.load();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+                Parent root = loader.getRoot();
+                Stage stage = new Stage();
+                stage.setScene(new Scene(root));
+
+                AddRDVController add = loader.getController();
+
+                add.setPatientId(pid);
+
+                System.out.println(pid);
+
+                stage.show();
+
+            });
+
             delete.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> {
                 PatientService patientService = new PatientService();
                 Patient p = new Patient(patient.getId(), patient.getCid(), patient.getFullname(), patient.getEmail(), patient.getAdresse(), patient.getTel(), patient.getDate());
@@ -138,9 +166,10 @@ public class ItemCellController extends JFXListCell<Patient> {
                         try {
                             patientService.delete(p);
                             getListView().getItems().remove(getListView().getItems());
-                            System.out.println( getListView().getItems().toString());
+                            System.out.println(getListView().getItems().toString());
+                            showListPatientScreen();
                             modal("Patient suprimé");
-                            
+
                         } catch (SQLException ex) {
                             Logger.getLogger(SignupController.class.getName()).log(Level.SEVERE, null, ex);
                         }
@@ -154,6 +183,25 @@ public class ItemCellController extends JFXListCell<Patient> {
             });
 
         }
+
+    }
+
+    void showListPatientScreen() {
+        delete.getScene().getWindow().hide();
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getResource("/cabinetmedicale/view/listPatient.fxml"));
+
+        try {
+            loader.load();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        Parent root = loader.getRoot();
+        Stage stage = new Stage();
+        stage.setScene(new Scene(root));
+
+        stage.show();
 
     }
 

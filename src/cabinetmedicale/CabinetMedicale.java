@@ -11,6 +11,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 /**
  *
@@ -20,7 +21,7 @@ public class CabinetMedicale extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("view/login.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("view/signup.fxml"));
 
         Scene scene = new Scene(root);
 
@@ -31,7 +32,6 @@ public class CabinetMedicale extends Application {
         DataSource data1 = DataSource.getInstance();
 
         System.out.println(data1);
-
         stage.setScene(scene);
         stage.show();
     }

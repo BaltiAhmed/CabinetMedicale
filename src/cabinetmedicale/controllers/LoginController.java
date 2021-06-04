@@ -21,6 +21,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 /**
  * FXML Controller class
@@ -38,7 +39,7 @@ public class LoginController implements Initializable {
 
     @FXML
     private JFXButton LoginSignupButton;
-    
+
     public static int userId;
 
     /**
@@ -70,10 +71,10 @@ public class LoginController implements Initializable {
 
             try {
                 if (cabinetS.login(email.getText(), password.getText()).size() == 1) {
-                    
+
                     userId = cabinetS.login(email.getText(), password.getText()).get(0).getId();
                     System.out.println(userId + "login");
-                    showListPatientScreen(userId);
+                    showListRDVtScreen();
                 } else {
 
                     modal("Invalid input passed !!!");
@@ -100,16 +101,17 @@ public class LoginController implements Initializable {
         stage.setScene(new Scene(root));
 
         MessageController message = loader.getController();
+        stage.initStyle(StageStyle.UNDECORATED);
 
         message.setText(text);
 
         stage.showAndWait();
     }
 
-    void showListPatientScreen(int userId) {
+    void showListRDVtScreen() {
         submit.getScene().getWindow().hide();
         FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource("/cabinetmedicale/view/listPatient.fxml"));
+        loader.setLocation(getClass().getResource("/cabinetmedicale/view/listRDV.fxml"));
 
         try {
             loader.load();
@@ -121,8 +123,7 @@ public class LoginController implements Initializable {
         Stage stage = new Stage();
         stage.setScene(new Scene(root));
 
-        
-        stage.showAndWait();
+        stage.show();
 
     }
 
